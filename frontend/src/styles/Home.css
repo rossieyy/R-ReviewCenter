@@ -1,0 +1,401 @@
+/* Home Page Styles */
+.home {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--accent-black) 100%);
+  color: var(--white);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,100 1000,0 1000,100"/></svg>');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-text h2 {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.promo-highlight {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.promo-highlight h3 {
+  color: var(--white);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.label {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.regular-price {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+}
+
+.promo-price {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.down-payment {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(17, 24, 39, 0.2);
+  border-radius: var(--radius-md);
+  margin-top: 1rem;
+}
+
+.highlight {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.cta-button {
+  background: linear-gradient(45deg, var(--accent-black), var(--gray-800));
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-lg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Hero Image/Logo */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shield-logo {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, var(--accent-black) 0%, var(--gray-800) 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  overflow: hidden;
+  border: 4px solid var(--white);
+}
+
+.shield-logo::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 100%);
+  border-radius: 15px;
+}
+
+/* Freebies Section */
+.freebies-section {
+  padding: 4rem 0;
+  background-color: var(--gray-50);
+}
+
+.freebies-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--primary-blue);
+}
+
+.freebies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.freebie-item {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary-blue);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--accent-black);
+}
+
+.freebie-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Review Schedule Section */
+.review-schedule {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  color: var(--white);
+}
+
+.review-schedule h2 {
+  color: var(--white);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.schedule-highlight {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.schedule-highlight h3 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.schedule-highlight p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  padding: 4rem 0;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.call-to-action p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.motivation {
+  font-size: 1.3rem;
+  color: var(--accent-black);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.register-button {
+  background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue));
+  color: var(--white);
+  border: none;
+  padding: 1.2rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-lg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.register-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.limited-slots {
+  font-size: 1rem;
+  color: var(--error);
+  font-weight: 600;
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+  
+  .shield-logo {
+    width: 150px;
+    height: 150px;
+    font-size: 2rem;
+  }
+  
+  .freebies-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .promo-highlight {
+    padding: 1.5rem;
+  }
+  
+  .schedule-highlight h3 {
+    font-size: 1.5rem;
+  }
+  
+  .freebies-section h2,
+  .review-schedule h2,
+  .call-to-action h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  
+  .shield-logo {
+    width: 120px;
+    height: 120px;
+    font-size: 1.5rem;
+  }
+  
+  .cta-button,
+  .register-button {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Animation Effects */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.shield-logo {
+  animation: float 3s ease-in-out infinite;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Scroll Animations */
+@media (prefers-reduced-motion: no-preference) {
+  .freebie-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+  
+  .freebie-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
